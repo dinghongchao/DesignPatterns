@@ -1,10 +1,10 @@
 package com.dhc.pattern.factory.abstractfactory;
 
+import com.dhc.pattern.factory.ISms;
+
 public interface ISmsFactory {
 
-    void send();
+    ISms createSms();
 
-    void report();
-
-    void uplink();
+    IReport createReport();
 }
